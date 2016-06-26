@@ -81,7 +81,7 @@ class big_meta_visuals {
       echo "<th>" . $i      . "</th>";
       echo "<th>" . $row[0] . "</th>";
       echo "<th>" . $row[1] . "</th>";
-      echo "</th>";
+      echo "</tr>";
       $i++;
     }
   }
@@ -102,7 +102,7 @@ class big_meta_visuals {
       echo "<th>" . $i      . "</th>";
       echo "<th>" . $row[0] . "</th>";
       echo "<th>" . $row[1] . "</th>";
-      echo "</th>";
+      echo "</tr>";
       $i++;
     }
   }
@@ -123,7 +123,7 @@ class big_meta_visuals {
       echo "<th>" . $i      . "</th>";
       echo "<th>" . $row[0] . "</th>";
       echo "<th>" . $row[1] . "</th>";
-      echo "</th>";
+      echo "</tr>";
       $i++;
 
     }
