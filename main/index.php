@@ -106,7 +106,7 @@
               <thead>
                 <tr>
                   <th>#</th>
-                  <th><?php echo _( 'Viewport' ); ?></th>
+                  <th><?php echo _( 'Generator' ); ?></th>
                   <th><?php echo _( 'Total' ); ?></th>
                 </tr>
               </thead>
