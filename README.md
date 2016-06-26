@@ -36,7 +36,7 @@ Big Meta is a meta tag visualization dashboard.  Analyze meta tag results from a
 5.  Scrape some meta tags
 
   ```
-  php main/big-meta.php
+  php main/php/big-meta.php
   ```
 
 
