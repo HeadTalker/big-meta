@@ -55,8 +55,8 @@
               <thead>
                 <tr>
                   <th>#</th>
-                  <th><?php echo _( 'Total' ); ?></th>
                   <th><?php echo _( 'Meta Tag' ); ?></th>
+                  <th><?php echo _( 'Total' ); ?></th>
                 </tr>
               </thead>
               <tbody>
@@ -72,8 +72,8 @@
               <thead>
                 <tr>
                   <th>#</th>
+                  <th><?php echo _( 'Meta Value' ); ?></th>
                   <th><?php echo _( 'Total' ); ?></th>
-                  <th><?php echo _( 'Meta Values' ); ?></th>
                 </tr>
               </thead>
               <tbody>
@@ -89,12 +89,29 @@
               <thead>
                 <tr>
                   <th>#</th>
-                  <th><?php echo _( 'Total' ); ?></th>
                   <th><?php echo _( 'Viewport' ); ?></th>
+                  <th><?php echo _( 'Total' ); ?></th>
                 </tr>
               </thead>
               <tbody>
                 <?php $big_meta_visuals->most_popular_viewports_table(); ?>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Most popular generators table -->
+          <h3 class="text-xs-center m-t-2 m-b-1"><?php echo _( 'Most Popular Generators' ); ?></h3>
+          <div class="table-responsive">
+            <table id="most-popular-generators-table" class="table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th><?php echo _( 'Viewport' ); ?></th>
+                  <th><?php echo _( 'Total' ); ?></th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php $big_meta_visuals->most_popular_generators_table(); ?>
               </tbody>
             </table>
           </div>

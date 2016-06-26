@@ -42,3 +42,18 @@ $(document).ready(function() {
   });
 
 });
+
+$(document).ready(function() {
+  jQuery('#most-popular-generators-table').DataTable({
+    "aaSorting": [],
+    "oLanguage": {
+      "sInfo": 'Showing _START_ to _END_ of _TOTAL_ Viewports.',
+      "sInfoEmpty": 'No Viewports yet.',
+      "sInfoFiltered": 'filtered from _MAX_ total Viewports',
+      "sZeroRecords": 'No Viewports Found',
+      "sLengthMenu": 'Show _MENU_ Viewports',
+      "sEmptyTable": "No Viewports found currently.",
+    }
+  });
+
+});

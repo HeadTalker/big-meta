@@ -19,11 +19,18 @@ a {
 .dataTables_wrapper {
   width: 99%;
 }
-.dataTables_wrapper select {
+.dataTables_wrapper select, .dataTables_wrapper input {
   color: #434857;
 }
-.dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter {
-  color: #cfd2da;
+.dataTables_wrapper th:first-child, .dataTables_wrapper th:last-child {
+  width: 15%;
+}
+.dataTables_wrapper th:nth-child(2) {
+  width: 70%;
+}
+
+.dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_paginate, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate .paginate_button {
+  color: #fff !important;
 }
 
 .table-hover > tbody > tr:hover {

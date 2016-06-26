@@ -79,8 +79,8 @@ class big_meta_visuals {
     foreach( $popular as $row ) {
       echo "<tr>";
       echo "<th>" . $i      . "</th>";
-      echo "<th>" . $row[0] . "</th>";
       echo "<th>" . $row[1] . "</th>";
+      echo "<th>" . $row[0] . "</th>";
       echo "</tr>";
       $i++;
     }
@@ -100,8 +100,8 @@ class big_meta_visuals {
     foreach( $popular as $row ) {
       echo "<tr>";
       echo "<th>" . $i      . "</th>";
-      echo "<th>" . $row[0] . "</th>";
       echo "<th>" . $row[1] . "</th>";
+      echo "<th>" . $row[0] . "</th>";
       echo "</tr>";
       $i++;
     }
@@ -121,13 +121,34 @@ class big_meta_visuals {
     foreach( $popular as $row ) {
       echo "<tr>";
       echo "<th>" . $i      . "</th>";
-      echo "<th>" . $row[0] . "</th>";
       echo "<th>" . $row[1] . "</th>";
+      echo "<th>" . $row[0] . "</th>";
       echo "</tr>";
       $i++;
 
     }
   }
+  
+  public function most_popular_generators() {
+    $popular = $this->db->query("SELECT COUNT(id) as count, meta_value FROM {$this->config['table']} WHERE meta_key = 'generator' GROUP BY meta_value ORDER BY count DESC LIMIT 100;")->fetchAll();
+    return $popular;
+  }
 
+  public function most_popular_generators_table() {
+
+    $popular = $this->most_popular_generators();
+
+    $i = 1;
+
+    foreach( $popular as $row ) {
+      echo "<tr>";
+      echo "<th>" . $i      . "</th>";
+      echo "<th>" . $row[1] . "</th>";
+      echo "<th>" . $row[0] . "</th>";
+      echo "</tr>";
+      $i++;
+
+    }
+  }
 
 }

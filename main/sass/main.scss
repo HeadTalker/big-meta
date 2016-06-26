@@ -25,12 +25,18 @@ a {
 */
 .dataTables_wrapper {
   width: 99%;
-  select {
+  select, input {
     color: $dark-gray;
   }
-  .dataTables_info, .dataTables_length, .dataTables_filter {
-    color: $blue-gray;
+  th:first-child, th:last-child {
+    width: 15%;
   }
+  th:nth-child(2) {
+    width: 70%;
+  }
+}
+.dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_paginate, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate .paginate_button {
+  color: #fff !important;
 }
 .table-hover > tbody > tr:hover {
   background: $dark-gray;
