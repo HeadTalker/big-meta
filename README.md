@@ -41,11 +41,9 @@
   php main/php/big-meta.php
   ```
 
-
-6.  Launch the app
+6.  Launch the app. This may vary depending where you installed the app and/or your environment.
 
   ```
-  # This may vary depending where you installed the app and/or your environment
   http://localhost/big-meta/main/
   ```
 
