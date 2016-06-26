@@ -18,7 +18,7 @@ class big_meta_visuals {
 
   public function __construct() {
     $this->config = config();
- 
+
     try {
 
       $db = new PDO( "mysql:host={$this->config['host']};dbname={$this->config['db']}", $this->config['user'], $this->config['pw'] );
@@ -37,7 +37,7 @@ class big_meta_visuals {
   *
   * @return int $total The total row count
   */
- 
+
   public function total_rows() {
     $total = (int) $this->db->query("SELECT COUNT(id) FROM {$this->config['table']}")->fetchColumn();
     return $total;
@@ -48,7 +48,7 @@ class big_meta_visuals {
   *
   * @return int $total The total sites count
   */
- 
+
   public function total_sites() {
     $total = (int) $this->db->query("SELECT COUNT(DISTINCT site) FROM {$this->config['table']}")->fetchColumn();
     return $total;
@@ -59,7 +59,7 @@ class big_meta_visuals {
   *
   * @return int $total The total unique meta tags count
   */
- 
+
   public function total_unique_tags() {
     $total = (int) $this->db->query("SELECT COUNT(DISTINCT meta_key) FROM {$this->config['table']}")->fetchColumn();
     return $total;
@@ -67,7 +67,7 @@ class big_meta_visuals {
 
   public function most_popular_tags() {
     $popular = $this->db->query("SELECT COUNT(meta_key), meta_key FROM {$this->config['table']} GROUP BY meta_key ORDER BY COUNT(meta_key) DESC LIMIT 100;")->fetchAll();
-    return $popular; 
+    return $popular;
   }
 
   public function most_popular_tags_table() {
@@ -88,7 +88,7 @@ class big_meta_visuals {
 
   public function most_popular_values() {
     $popular = $this->db->query("SELECT COUNT(meta_value), meta_value FROM {$this->config['table']} GROUP BY meta_value ORDER BY COUNT(meta_value) DESC LIMIT 100;")->fetchAll();
-    return $popular; 
+    return $popular;
   }
 
   public function most_popular_values_table() {
@@ -109,7 +109,7 @@ class big_meta_visuals {
 
   public function most_popular_viewports() {
     $popular = $this->db->query("SELECT COUNT(id) as count, meta_value FROM {$this->config['table']} WHERE meta_key = 'viewport' GROUP BY meta_value ORDER BY count DESC LIMIT 100;")->fetchAll();
-    return $popular; 
+    return $popular;
   }
 
   public function most_popular_viewports_table() {
@@ -125,7 +125,7 @@ class big_meta_visuals {
       echo "<th>" . $row[1] . "</th>";
       echo "</th>";
       $i++;
-    
+
     }
   }
 

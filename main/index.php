@@ -8,21 +8,21 @@
   </head>
   <body class="m-b-2 m-t-3">
     <?php
-    require_once( __DIR__ . '/php/main.php' ); // require our main php file
+    require_once( __DIR__ . '/php/big-meta-visuals.php' ); // require our main php file
     $big_meta_visuals = new big_meta_visuals(); // init our class
     ?>
     <!-- Main Content -->
     <div class="container-fluid">
 
       <div class="row">
-        
+
         <h1 class="text-xs-center p-b-2"><?php echo _( 'Big Meta' ); ?></h1>
 
         <div class="col-md-4">
           <div class="card card-inverse card-primary text-xs-center p-y-2">
             <div class="card-block">
               <h2><?php echo $big_meta_visuals->total_sites();?></h2>
-              <span><?php echo _( 'Total Sites' ); ?></span> 
+              <span><?php echo _( 'Total Sites' ); ?></span>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@
           <div class="card card-inverse card-success text-xs-center p-y-2">
             <div class="card-block">
               <h2><?php echo $big_meta_visuals->total_rows();?></h2>
-              <span><?php echo _( 'Total Meta Tags' ); ?></span> 
+              <span><?php echo _( 'Total Meta Tags' ); ?></span>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
           <div class="card card-inverse card-danger text-xs-center p-y-2">
             <div class="card-block">
               <h2><?php echo $big_meta_visuals->total_unique_tags();?></h2>
-              <span><?php echo _( 'Total Unique Meta Tags' ); ?></span> 
+              <span><?php echo _( 'Total Unique Meta Tags' ); ?></span>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@
             <table id="most-popular-tags-table" class="table table-hover table-bordered">
               <thead>
                 <tr>
-                  <th>#</th> 
+                  <th>#</th>
                   <th><?php echo _( 'Total' ); ?></th>
                   <th><?php echo _( 'Meta Tag' ); ?></th>
                 </tr>
@@ -71,7 +71,7 @@
             <table id="most-popular-values-table" class="table table-hover table-bordered">
               <thead>
                 <tr>
-                  <th>#</th> 
+                  <th>#</th>
                   <th><?php echo _( 'Total' ); ?></th>
                   <th><?php echo _( 'Meta Values' ); ?></th>
                 </tr>
@@ -88,7 +88,7 @@
             <table id="most-popular-viewports-table" class="table table-hover table-bordered">
               <thead>
                 <tr>
-                  <th>#</th> 
+                  <th>#</th>
                   <th><?php echo _( 'Total' ); ?></th>
                   <th><?php echo _( 'Viewport' ); ?></th>
                 </tr>
