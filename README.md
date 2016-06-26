@@ -1,5 +1,7 @@
 <h2>Big Meta is a meta tag visualization dashboard.  Analyze meta tag results from as many sites as you want.</h2>
 
+![Big Meta Dashboard photo](http://i.imgur.com/7rFgMLr.png)
+
 <h3>Installation:</h3>
 
 1.  Clone the repository
