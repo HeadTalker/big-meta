@@ -4,7 +4,7 @@ Big Meta is a meta tag visualization dashboard.  Analyze meta tag results from a
 
 1.  Clone the repository
   ```
-  git clone https://github.com/HeadTalker/uptime-robot.git
+  git clone https://github.com/HeadTalker/big-meta.git
   ```
 
 2. Create a MYSQL database and table
