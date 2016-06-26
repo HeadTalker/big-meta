@@ -1,0 +1,20 @@
+{
+  "name": "big-meta",
+  "version": "1.0.0",
+  "authors": [
+    "HeadTalker <contact@headtalker.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "Chart.js": "2.1.4",
+    "jquery": "2.1.4",
+    "bootstrap": "v4.0.0-alpha.2",
+    "tether": "1.3.2",
+    "datatables.net": "1.10.12",
+    "datatables.net-dt": "1.10.12"
+  }
+}

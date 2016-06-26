@@ -1,0 +1,53 @@
+/*
+* Colors
+*/
+
+$white: #fff;
+$dark-gray: #434857;
+$blue-gray: #cfd2da;
+$dark: #252830;
+
+/*
+* Base structure
+*/
+
+body {
+  background: $dark;
+  color: $white;
+}
+
+a {
+  color: $blue-gray;
+}
+
+/*
+* Tables
+*/
+.dataTables_wrapper {
+  width: 99%;
+  select {
+    color: $dark-gray;
+  }
+  .dataTables_info, .dataTables_length, .dataTables_filter {
+    color: $blue-gray;
+  }
+}
+.table-hover > tbody > tr:hover {
+  background: $dark-gray;
+}
+table.dataTable tbody tr {
+  background: none;
+}
+.table-bordered, .table-bordered td, .table-bordered th {
+  border: 1px solid $dark-gray;
+}
+.dataTables_filter {
+  float: right;
+}
+.pagination {
+  margin: 0;
+  float: right;
+}
+.dataTables_info {
+  margin-top: 6px;
+}

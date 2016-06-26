@@ -1,0 +1,52 @@
+/*
+* Colors
+*/
+/*
+* Base structure
+*/
+body {
+  background: #252830;
+  color: #fff;
+}
+
+a {
+  color: #cfd2da;
+}
+
+/*
+* Tables
+*/
+.dataTables_wrapper {
+  width: 99%;
+}
+.dataTables_wrapper select {
+  color: #434857;
+}
+.dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter {
+  color: #cfd2da;
+}
+
+.table-hover > tbody > tr:hover {
+  background: #434857;
+}
+
+table.dataTable tbody tr {
+  background: none;
+}
+
+.table-bordered, .table-bordered td, .table-bordered th {
+  border: 1px solid #434857;
+}
+
+.dataTables_filter {
+  float: right;
+}
+
+.pagination {
+  margin: 0;
+  float: right;
+}
+
+.dataTables_info {
+  margin-top: 6px;
+}
