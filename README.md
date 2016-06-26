@@ -1,6 +1,6 @@
 
 ```
-CREATE DATABASE big_meta
+CREATE DATABASE big_meta;
 ```
 
 ```
