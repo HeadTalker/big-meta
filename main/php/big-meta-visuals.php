@@ -65,10 +65,20 @@ class big_meta_visuals {
     return $total;
   }
 
+  /**
+  * Returns Most popular meta tags
+  *
+  * @return array $popular The most popular meta tags  and counts
+  */
+
   public function most_popular_tags() {
     $popular = $this->db->query("SELECT COUNT(meta_key), meta_key FROM {$this->config['table']} GROUP BY meta_key ORDER BY COUNT(meta_key) DESC LIMIT 100;")->fetchAll();
     return $popular;
   }
+
+  /**
+  * Most popular meta tags table
+  */
 
   public function most_popular_tags_table() {
 
@@ -86,10 +96,20 @@ class big_meta_visuals {
     }
   }
 
+  /**
+  * Returns Most popular meta values
+  *
+  * @return array $popular The most popular meta values and counts
+  */
+
   public function most_popular_values() {
     $popular = $this->db->query("SELECT COUNT(meta_value), meta_value FROM {$this->config['table']} GROUP BY meta_value ORDER BY COUNT(meta_value) DESC LIMIT 100;")->fetchAll();
     return $popular;
   }
+
+  /**
+  * Most popular meta values table
+  */
 
   public function most_popular_values_table() {
 
@@ -107,10 +127,20 @@ class big_meta_visuals {
     }
   }
 
+  /**
+  * Returns Most popular viewports
+  *
+  * @return array $popular The most popular viewports and counts
+  */
+
   public function most_popular_viewports() {
     $popular = $this->db->query("SELECT COUNT(id) as count, meta_value FROM {$this->config['table']} WHERE meta_key = 'viewport' GROUP BY meta_value ORDER BY count DESC LIMIT 100;")->fetchAll();
     return $popular;
   }
+
+  /**
+  * Most popular viewports table
+  */
 
   public function most_popular_viewports_table() {
 
@@ -128,11 +158,21 @@ class big_meta_visuals {
 
     }
   }
-  
+
+  /**
+  * Returns Most popular generators
+  *
+  * @return array $popular The most popular generators and counts
+  */
+
   public function most_popular_generators() {
     $popular = $this->db->query("SELECT COUNT(id) as count, meta_value FROM {$this->config['table']} WHERE meta_key = 'generator' GROUP BY meta_value ORDER BY count DESC LIMIT 100;")->fetchAll();
     return $popular;
   }
+
+  /**
+  * Most popular generators table
+  */
 
   public function most_popular_generators_table() {
 
