@@ -10,7 +10,6 @@ $(document).ready(function() {
       "sEmptyTable": "No Meta Tags found currently.",
     }
   });
-
 });
 
 $(document).ready(function() {
@@ -25,7 +24,6 @@ $(document).ready(function() {
       "sEmptyTable": "No Meta Values found currently.",
     }
   });
-
 });
 
 $(document).ready(function() {
@@ -40,20 +38,18 @@ $(document).ready(function() {
       "sEmptyTable": "No Viewports found currently.",
     }
   });
-
 });
 
 $(document).ready(function() {
   jQuery('#most-popular-generators-table').DataTable({
     "aaSorting": [],
     "oLanguage": {
-      "sInfo": 'Showing _START_ to _END_ of _TOTAL_ Viewports.',
-      "sInfoEmpty": 'No Viewports yet.',
-      "sInfoFiltered": 'filtered from _MAX_ total Viewports',
-      "sZeroRecords": 'No Viewports Found',
-      "sLengthMenu": 'Show _MENU_ Viewports',
-      "sEmptyTable": "No Viewports found currently.",
+      "sInfo": 'Showing _START_ to _END_ of _TOTAL_ Generators.',
+      "sInfoEmpty": 'No Generators yet.',
+      "sInfoFiltered": 'filtered from _MAX_ total Generators',
+      "sZeroRecords": 'No Generators Found',
+      "sLengthMenu": 'Show _MENU_ Generators',
+      "sEmptyTable": "No Generators found currently.",
     }
   });
-
 });
